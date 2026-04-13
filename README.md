@@ -7,7 +7,7 @@ It greets users with a voice message, displays an ASCII art logo, and provides i
 
 Features
 - Plays a voice greeting at application startup
-- Displays an ASCII art Text in the console (For this part i used an online ASCII art to Text generator, so its not a separate file but raw text)
+- Displays an ASCII art Text in the console (For this part i used an online Text-to-ASCII generator, so instead of a separate file i used raw text)
 - Greets users by name with a personalised message
 - Responds to basic questions about:
   - Password safety
