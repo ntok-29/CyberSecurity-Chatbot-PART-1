@@ -7,7 +7,7 @@ namespace CyberAwarenessBot
     {
         static void Main(string[] args)
         {
-            PlayVoiceGreeting();
+            VoiceGreeting();
             DisplayASCIIBanner();
             UserGreeting();
 
@@ -26,7 +26,7 @@ namespace CyberAwarenessBot
             }
         }
 
-        static void PlayVoiceGreeting()
+        static void VoiceGreeting()
         {
             try
             {
@@ -79,7 +79,7 @@ namespace CyberAwarenessBot
 
                 case "what's your purpose?":
                 case "what is your purpose?":
-                    Console.WriteLine("My purpose is to help you stay safe online by sharing cybersecurity tips.");
+                    Console.WriteLine("My purpose is to help you stay safe online by sharing safety cybersecurity tips.");
                     break;
 
                 case "what can i ask you about?":
@@ -87,15 +87,20 @@ namespace CyberAwarenessBot
                     break;
 
                 case "password safety":
-                    Console.WriteLine("Tip: Use long, unique passwords and enable two-factor authentication.");
+                    Console.WriteLine("Tip: It is best to use long, unique passwords with special " +
+                        "characters and enable two-factor authentication to add extra protection.");
                     break;
 
                 case "phishing":
-                    Console.WriteLine("Tip: Be cautious of emails or messages asking for personal info. Check the sender carefully.");
+                    Console.WriteLine("Tip: Be cautious of emails or messages asking for personal info such as;" +
+                        "\nyour ID\ndriving license\nbanking details.\nAlways check the sender carefully and " +
+                        "make sure the url link is legit.");
                     break;
 
                 case "safe browsing":
-                    Console.WriteLine("Tip: Always keep your browser updated and avoid clicking suspicious links.");
+                    Console.WriteLine("Tip: Always keep your browser updated and avoid clicking suspicious links. " +
+                        "You can use a VPN but most browsers have antivirus and ad-detection extensions, " +
+                        "these can be very useful when browsing the web.");
                     break;
 
                 default:
